@@ -29,7 +29,7 @@ html body{
 	background-color: #222931;
 }
 
-/*===== Definition des tailles d'écrans et fenêtres pour la classe .container:olivier===*/
+/*===== Definition des tailles d'écrans et fenêtres pour la classe .container {Olivier}===*/
 
 @media (min-width: 768px) {
   .container{
@@ -43,11 +43,11 @@ html body{
 }
 @media (min-width: 1200px) {
   .container{
-    width: 1540px;
+    width: 1170px;
   }
 }
 
-/*===== Commun =====*/
+/*===== Commun {Alexandre}=====*/
 
 button{
 	height: 65px;
@@ -80,8 +80,20 @@ button:hover{
 
 .link:hover{	
 	color: #18bfef;
+	transition: 350ms;
 }
-/*===== Background =====*/
+
+.bottom{
+	width: 1540px;
+	margin: 0 auto;
+	border-bottom: 2px #e2e2e2 solid;
+}
+
+.right{
+	height: 100%;
+	border-right: 2px #e2e2e2 solid;
+}
+/*===== Background {Alexandre}=====*/
 
 #background{
 	width: 100%;
@@ -94,12 +106,13 @@ button:hover{
 	background-size: cover;
 }
 
-/*===== Fondu =====*/
+/*===== Fondu {Alexandre}=====*/
 #fadeUp{
 	opacity: 0;
 }
 
-/*===== Header =====*/
+/*===== Header {Alexandre}=====*/
+
 header{
 	height: 520px;
 	margin: 0 auto;
@@ -169,9 +182,12 @@ header{
 	color: #18bfef;
 }
 
-/*===== Barre de navigation =====*/
+/*===== Barre de navigation {Olivier}=====*/
+
 .container{
 	position: relative;
+	width: 1540px;
+	padding: 0px;
 }
 
 .navbar{
@@ -182,7 +198,7 @@ header{
 	border:none;
 }
 
-ul li  a{
+ul li a{
 	font-family: "Source sans pro", sans-serif;
 	font-size:15px;
 	letter-spacing:0.1em;
@@ -204,12 +220,14 @@ ul li  a{
 	background-color:transparent;
 	color: #18bfef;
 }
+
 .navbar-left  .active a{
 	background-color:white;
 	color:black;
 }
 
-/*===== Article =====*/
+/*===== Article {Olivier}=====*/
+
 section{
 	position:relative;
 	background-color:white;
@@ -217,35 +235,38 @@ section{
 	padding-top:50px;
 }
 
-
-/*== definition des images===*/
+/*===== definition des images {Olivier}=====*/
 
 img{
 	
 	margin: 50px auto 0;
 	
 }
-/* ==action sur les survols==*/
+
+/* ===== action sur les survols {Olivier} =====*/
+
 img:hover{
 	transform:scale(1.05);
 }
 
-h1,h2:hover{
+h1:hover, h2:hover{
+	transition: 350ms;
 	color: #18bfef;	
+	transition: 350ms;
 }
 
 a:hover{
 	text-decoration:none;
+	transition: 350ms;
+	transition: 350ms;
 }
 
-
-/* ==definition des balises h et p==*/
+/* ===== definition des balises h et p {Olivier}=====*/
 h3 {
 	font-family:"MerriWeather";
 	font-size:18px;
 	margin:50px 0;
 }
-
 
 h1{
 	font-family: "Source sans pro", sans-serif;
@@ -263,6 +284,7 @@ section p {
 	line-height:30px;
 	margin:50px auto 0;	
 }
+
 h2 {
 	
 	font-family: "Source sans pro", sans-serif;
@@ -270,11 +292,41 @@ h2 {
 	font-size:35px;
 	
 }
-/*===== Formulaire de contact =====*/
+
+/* ===== la pagination {Olivier}=====*/
+
+.page{
+	width: 100%;
+	height: 245px;
+	margin: 0 auto;
+	background-color: white;
+	text-align: center;
+}
+
+.pagination{
+	margin: calc(122.5px - 32.5px) 0 ;
+}
+
+.pagination li a {
+	height: 65px;
+	width: 65px;
+	font-size: 18px;
+	line-height: 45px;
+	color:black;
+}
+
+.pagination  li a:hover{
+	color: #18bfef;
+	border-color:#18bfef;
+	background-color: white;
+}
+
+/*===== Formulaire de contact {Alexandre}=====*/
 
 .contact{
 	width: 100%;
 	margin: 0 auto;
+	padding: 0;
 	background-color: #f5f5f5;
 	text-align: left;	
 	font-family : "Merriweather",georgia;
@@ -282,12 +334,17 @@ h2 {
 	color: #717981;
 }
 
+.center{
+	width: 595px;
+	margin: 0 auto;
+}
+
 	/*--- Mail ---*/
 
 .mail{
-	width: 595px;
-	margin: 0 auto;
+	width: 100%;
 	padding: 75px 0 90px 0;
+	border-right: 2px #e2e2e2 solid;
 }
 
 h4{
@@ -334,12 +391,19 @@ input:focus{
 }
 
 .coord-form{
+	width: 595px;
+	height: 175px;
+	margin: 10px auto 0 auto;
+	border-bottom: 2px #e2e2e2 solid;
+	line-height: 175px
+}
+
+.last{	
 	width: 100%;
 	height: 175px;
 	margin: 10px 0 0 0;
 	line-height: 175px
 }
-
 .coord h4{
 	width: 125px;
 	position: relative;
@@ -375,10 +439,15 @@ input:focus{
 	color: #717981;	
 }
 
-/*===== Footer =====*/
+/*===== Footer {Alexandre}=====*/
 
 footer p{
+	margin: 85px 0 170px 0;
 	position: relative;
+	font-family: "Source sans pro", sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
 	text-align: center;
-	color: white;
+	letter-spacing: 2px;
+	color: #717981;	
 }
